@@ -2,6 +2,7 @@ import './Design.css';
 import { GoDownload } from "react-icons/go";
 import image1 from './image/image1.png';
 import image2 from './image/image2.png';
+import group from './image/group.png';
 export default function Header(){
     return(
       <div className="container">
@@ -25,6 +26,10 @@ export default function Header(){
           <div className="section-image">
             <img className="image1" src={image1} alt='header1'/>
             <img className="image2" src={image2} alt='header2'/>
+          </div>
+
+          <div className='arrow'>
+            <img src={group} alt="group"/>
           </div>
 
         </section>
