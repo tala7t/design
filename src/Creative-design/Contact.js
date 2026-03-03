@@ -1,12 +1,16 @@
 import './Design.css'
 import contact from './image/contact.png';
 import { FiSend } from "react-icons/fi";
+import { useTranslation } from 'react-i18next';
+
 export default function Contact(){
+    const { t } = useTranslation();
+
     return(
         <div className="contact">
             <div className="contact-container" id="contact">
                 <div className="contact-left">
-                    <h1>Got a project in <span>mind?</span></h1>
+                    <h1>{t("gotProject")} <span>{t("mind")}</span></h1>
                     <div className="image-contact">
                         <img src={contact} alt='imageContact'/>
                     </div>
@@ -15,21 +19,21 @@ export default function Contact(){
                     <form>
                         <div className="row">
                             <div className="field">
-                                <label>Your Name</label>
-                                <input type="text" placeholder="Name"/>
+                                <label>{t( "yourName")}</label>
+                                <input type="text" placeholder={t( "name")}/>
                             </div>
                             <div className="field">
-                                <label>Your Email</label>
-                                <input type="email" placeholder="Email"/>
+                                <label>{t( "yourEmail")}</label>
+                                <input type="email" placeholder={t( "email")}/>
                             </div>
                         </div>
 
                         <div className="field">
-                            <label>Message</label>
-                            <textarea placeholder="Message"></textarea>
+                            <label>{t( "message")}</label>
+                            <textarea placeholder={t("message")}></textarea>
                         </div>
                         <button type="submit">
-                            Send Message
+                            {t( "sendMessage")}
                             <FiSend/>
                         </button>
                     </form>

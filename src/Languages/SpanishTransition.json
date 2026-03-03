@@ -1,0 +1,27 @@
+{
+    "brandName": "SaulDesign",
+
+  "home": "Inicio",
+  "aboutMe": "Sobre mí",
+  "contact": "Contacto",
+  "creativeUIDesigner": " DE UI CREATIVO",
+  "desiner": "DISEÑADOR",
+  "hireMe": "Contrátame",
+  "downloadCV": "Descargar CV",
+  "aboutDescription": "Soy un diseñador de UI creativo, apasionado por interfaces web y aplicaciones...",
+  "myRecentWorks": "Mis trabajos ",
+  "work": "recientes",
+  "all": "Todos",
+  "ui": "UI",
+  "ux": "UX",
+  "webDesign": "Diseño Web",
+  "gotProject": "¿Tienes un proyecto en ",
+  "mind":"mente?",
+  "yourName": "Tu nombre",
+  "name": "Nombre",
+  "yourEmail": "Tu correo electrónico",
+  "email": "Correo electrónico",
+  "message": "Mensaje",
+  "sendMessage": "Enviar mensaje",
+  "termsPrivacy": "Términos de servicio - Política de privacidad"
+}

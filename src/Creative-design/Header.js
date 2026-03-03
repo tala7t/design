@@ -3,23 +3,27 @@ import { GoDownload } from "react-icons/go";
 import image1 from './image/image1.png';
 import image2 from './image/image2.png';
 import group from './image/group.png';
+import { useTranslation } from 'react-i18next';
+
 export default function Header(){
+    const { t } = useTranslation();
+
     return(
       <div className="container">
         <header className="header-container">
-          <h1>SaulDesign</h1>
+          <h1>{t('brandName')}</h1>
           <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#home">{t('home')}</a></li>
+            <li><a href="#about">{t('aboutMe')}</a></li>
+            <li><a href="#contact">{t('contact')}</a></li>
           </ul>
         </header>
         <section className="home">
           <div className="home-contact">
-          <h1>CREATIVE UI <span>DESIGNER</span></h1>
+          <h1>{t('creativeUIDesigner')} <span>{t('desiner')}</span></h1>
           <div className="button">
-            <a href="#hireme" className="hire-me">Hire Me</a>
-            <a href="#download" download className="download">Download CV <GoDownload /></a>
+            <a href="#hireme" className="hire-me">{t('hireMe')}</a>
+            <a href="#download" download className="download">{t('downloadCV')}<GoDownload /></a>
           </div>
           </div>
 

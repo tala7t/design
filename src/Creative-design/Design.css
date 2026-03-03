@@ -364,3 +364,34 @@ button{
     font-weight: 400;
     padding: 48px 96px;
 }
+
+.selectLanguage{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px;
+}
+.selectLanguage select{
+    padding: 8px 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: rgba(34, 40, 49, 1);
+    color: white;
+    cursor: pointer;
+}
+body.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+.darkMode{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 8px 12px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    border: none;
+
+}

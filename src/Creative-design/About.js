@@ -1,16 +1,17 @@
 import './Design.css';
 import image3 from './image/image3.png';
 import image4 from './image/image4.png';
+import { useTranslation } from 'react-i18next';
+
 export default function About(){
+const { t } = useTranslation();
+
     return(
         <section className="about-section" id="about">
             <div className="about-container">
                 <div className="about-text">
-                    <h1>About <span>me</span></h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Nunc vulputate libero et velit interdum, ac aliquet odio mattis. 
-                        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
-                        Curabitur tempus urna at turpis condimentum lobortis.... <span>Read more</span></p>
+                    <h1>{t('aboutMe')} <span>{t()}</span></h1>
+                    <p>{t('aboutDescription')} <span>{t('readmore')}</span></p>
                 </div>
                 <div className="about-image">
                     <img className="image3" src={image3} alt='About me image1'/>
